@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".dialogs.GoEventDialog">
+
+    <TextView
+        android:id="@+id/textViewGoEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="GoEvent"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listViewGoEvent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textViewGoEventGoing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Going"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/roles_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp" />
+
+        <TextView
+            android:id="@+id/textViewGoEventMaybe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:text="Maybe"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

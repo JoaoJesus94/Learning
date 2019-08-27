@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#C0C0C0">
+
+        <TextView
+            android:id="@+id/item_character_charName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/border_black"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/item_character_level"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_black"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/item_character_race"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/border_black"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/item_character_class"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/border_black"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/item_character_mainSpec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/border_black"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/item_character_offSpec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/border_black"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>

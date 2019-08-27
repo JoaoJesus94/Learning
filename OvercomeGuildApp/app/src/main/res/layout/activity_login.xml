@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpapper"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/overcome_guild_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        android:layout_weight="1"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:text="@string/textUsername"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:text="@string/textPassword"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickLogin"
+            android:text="@string/btnLogin" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="59dp" />
+
+        <TextView
+            android:id="@+id/textViewOffline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="offline"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

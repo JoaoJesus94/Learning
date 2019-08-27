@@ -1,0 +1,45 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\DetailView;
+
+/* @var $this yii\web\View */
+/* @var $model common\models\Character */
+
+$this->title = $model->id;
+$this->params['breadcrumbs'][] = ['label' => 'Characters', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+\yii\web\YiiAsset::register($this);
+?>
+<div class="character-view">
+
+    <?= Html::tag('h1', $this->title, ['class' => 'text-center color-dimgrey']) ?>
+    <br>
+
+    <p>
+        <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+            'class' => 'btn btn-danger',
+            'data' => [
+                'confirm' => 'Are you sure you want to delete this item?',
+                'method' => 'post',
+            ],
+        ]) ?>
+    </p>
+
+    <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            'id',
+            'charName',
+            'level',
+            'class',
+            'race',
+            'mainSpec',
+            'offSpec',
+            'User_id',
+            'main',
+        ],
+    ]) ?>
+
+</div>

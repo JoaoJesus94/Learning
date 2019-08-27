@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dialogs.CreatePostsCommentDialog">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="Comments"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listViewPostComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextPostsCommet"
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Comment"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnCreateComment"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="save"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

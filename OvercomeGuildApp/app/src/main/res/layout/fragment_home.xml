@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpapper"
+    tools:context=".fragments.HomeFragment">
+
+    <ImageView
+        android:id="@+id/fCalendar_imgV_logo"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/overcome_guild_logo"
+        android:contentDescription="@string/string_Logo"/>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slide left to rigth to more Options"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewRecruitmant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Recruitment"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageViewRecruitment"
+                android:layout_width="250dp"
+                android:layout_height="394dp"
+                android:src="@drawable/recruitment" />
+
+            <TextView
+                android:id="@+id/textViewProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Progress"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageViewProgress"
+                android:layout_width="250dp"
+                android:layout_height="272dp"
+                android:layout_weight="1"
+                android:src="@drawable/progress" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

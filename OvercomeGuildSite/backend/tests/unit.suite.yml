@@ -1,0 +1,13 @@
+suite_namespace: backend\tests\unit
+actor: UnitTester
+bootstrap: false
+modules:
+  enabled:
+  - Yii2:
+      cleanup: false
+      part: fixtures
+  - Asserts
+  - Db:
+      dsn: 'mysql:host=localhost;dbname=overcomeguild_test'
+      user: 'root'
+      password: ''

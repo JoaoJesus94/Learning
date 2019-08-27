@@ -1,0 +1,410 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .nav li > form > button.logout {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/***
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+body {
+    background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+    margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: #fff;
+}
+
+.profile-userpic img {
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+
+.profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+    margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+    margin-right: 0px;
+}
+
+.profile-usermenu {
+    margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+    border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+    border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+    color: #5b9bd1;
+    background-color: #f6f9fb;
+    border-left: 2px solid #5b9bd1;
+    margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+    padding: 20px;
+    background: #fff;
+    min-height: 460px;
+}
+
+.myContainer {
+    padding: 15px;
+}
+
+.header-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background-img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-image: url("../img/Background.png");
+    background-repeat: repeat;
+    padding-right: 15px;
+}
+
+.transparent-background {
+    background-color: transparent;
+}
+
+.div-border-white {
+    border-left-style: solid;
+    border-left-color: darkgray;
+    border-right-style: solid;
+    border-right-color: darkgray;
+}
+
+.mynav-fixed-left {
+    position: fixed;
+    left: initial;
+    top: 0;
+}
+
+#content {
+    float: right;
+}
+
+.center-elements {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin: auto;
+    padding: auto;
+}
+
+.font-lightgray {
+    color: lightgray;
+}
+
+.with-80percent {
+    width: 80%;
+}
+
+.right-nav-float-right {
+    float: right;
+    text-align: start;
+}
+
+.detailViewProfile {
+    border: 2px solid white;
+}
+
+.center-tables {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-dimgrey {
+    color: dimgrey;
+}
+
+.event_title {
+    font-size: xx-large;
+    font-style: italic
+}
+
+.event_content{
+    font-size: larger;
+}
+
+/* FORUM & NEWS */
+.box{
+    width: auto;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+.new {
+    font-size: 25px;
+    color: white;
+}
+.content {
+    color: white;
+}
+
+button.linkclass {
+    background: none;
+    border: none;
+}
+.commenthide {
+    display: none;
+}
+#btnsave {
+    float: right;
+}
+table, th, td {
+    align: "center";
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+.button1 {
+    background-color: #af0600;
+    border: none;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.button2 {
+    background-color: #af5a00;
+    border: none;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.linkTopic {
+    color: blue;
+}
+
+.linkSubTopic {
+    color: darkturquoise;
+}
+
+.subTopic {
+    font-size: 18px;
+    color: #002a80;
+}
+
+.topic {
+    font-size: 25px;
+    color: #1ab7ea;
+}
+.description1{
+    float:left;
+    font-size: 25px;
+}
+
+.description2{
+    float:left;
+    font-size: 20px;
+    color: #e08e0b;
+}
+
+.btnn{
+    color: #e08e0b;
+    font-size: 20px;
+}

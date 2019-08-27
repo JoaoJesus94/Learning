@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">OvercomeGuildApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="string_Logo">Logo</string>
+    <string name="btnLogin">Login</string>
+    <string name="textUsername" />
+    <string name="textPassword" />
+    <string name="username">username</string>
+    <string name="password">password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textDeleteCharcater">Are you shore you want to delete?</string>
+
+    <string-array name="roles_array">
+        <item>Role</item>
+        <item>Tank</item>
+        <item>Healer</item>
+        <item>DPS</item>
+    </string-array>
+
+    <string-array name="character_races">
+        <item>Select Race</item>
+        <item>Draenei</item>
+        <item>Dwarf</item>
+        <item>Gnome</item>
+        <item>Human</item>
+        <item>Night Elf</item>
+        <item>Worgen</item>
+        <item>Pandaren</item>
+        <item>Dark Iron Dwarf</item>
+        <item>Kul Tiran Human</item>
+        <item>Lightforged Draenaei</item>
+        <item>Void Elf</item>
+    </string-array>
+
+    <string-array name="draenei_classes">
+        <item>Death Knight</item>
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Priest</item>
+        <item>Shaman</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="dwarf_classes">
+        <item>Death Knight</item>
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Shaman</item>
+        <item>Warlock</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="gnome_classes">
+        <item>Death Knight</item>
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Warlock</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="human_classes">
+        <item>Death Knight</item>
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Warlock</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="night_elf_classes">
+        <item>Death Knight</item>
+        <item>Demon Hunter</item>
+        <item>Druid</item>
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="worgen_classes">
+        <item>Death Knight</item>
+        <item>Druid</item>
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Warlock</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="pandaren_classes">
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Shaman</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="dark_iron_dwarf_classes">
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Shaman</item>
+        <item>Warlock</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="kul_tiran_human_classes">
+        <item>Druid</item>
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Shaman</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="lightforged_draenei_classes">
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Paladin</item>
+        <item>Priest</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="void_elf_classes">
+        <item>Hunter</item>
+        <item>Mage</item>
+        <item>Monk</item>
+        <item>Priest</item>
+        <item>Rogue</item>
+        <item>Warlock</item>
+        <item>Warrior</item>
+    </string-array>
+
+    <string-array name="warrior_specializations">
+        <item>Arms</item>
+        <item>Fury</item>
+        <item>Protection</item>
+    </string-array>
+
+    <string-array name="paladin_specializations">
+        <item>Holy</item>
+        <item>Protection</item>
+        <item>Retribution</item>
+    </string-array>
+
+    <string-array name="hunter_specializations">
+        <item>Beast Mastery</item>
+        <item>Marksmanship</item>
+        <item>Survival</item>
+    </string-array>
+
+    <string-array name="rogue_specializations">
+        <item>Assassination</item>
+        <item>Outlaw</item>
+        <item>Subtlety</item>
+    </string-array>
+
+    <string-array name="priest_specializations">
+        <item>Discipline</item>
+        <item>Holy</item>
+        <item>Shadow</item>
+    </string-array>
+
+    <string-array name="death_knight_specializations">
+        <item>Blood</item>
+        <item>Frost</item>
+        <item>Unholy</item>
+    </string-array>
+
+    <string-array name="shaman_specializations">
+        <item>Elemental</item>
+        <item>Enhancement</item>
+        <item>Restoration</item>
+    </string-array>
+
+    <string-array name="mage_specializations">
+        <item>Arcane</item>
+        <item>Frost</item>
+        <item>Fire</item>
+    </string-array>
+
+    <string-array name="warlock_specializations">
+        <item>Affliction</item>
+        <item>Demonology</item>
+        <item>Destruction</item>
+    </string-array>
+
+    <string-array name="monk_specializations">
+        <item>Brewmaster</item>
+        <item>Mistweaver</item>
+        <item>Windwalker</item>
+    </string-array>
+
+    <string-array name="druid_specializations">
+        <item>Balance</item>
+        <item>Feral</item>
+        <item>Guardian</item>
+        <item>Restoration</item>
+    </string-array>
+
+    <string-array name="demon_hunter_specializations">
+        <item>Havoc</item>
+        <item>Vengeance</item>
+    </string-array>
+
+</resources>

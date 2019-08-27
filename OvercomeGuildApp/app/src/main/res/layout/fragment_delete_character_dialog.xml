@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    tools:context=".dialogs.DeleteCharacterDialog">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textViewDeleteCharacter"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="Are you sure you want to delete?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="75dp">
+
+        <TextView
+            android:id="@+id/textView_deleteCharacter_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Cancel"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_deleteCharacter_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Delete"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

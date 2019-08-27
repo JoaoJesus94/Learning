@@ -1,0 +1,133 @@
+<?php
+
+namespace backend\controllers;
+
+use common\models\Userprofile;
+use Yii;
+use common\models\News;
+use common\models\NewsSearch;
+use yii\web\Controller;
+use yii\web\NotFoundHttpException;
+use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
+
+/**
+ * NewsController implements the CRUD actions for News model.
+ */
+class NewsController extends Controller
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['index', 'create', 'update', 'delete'],
+                'rules' => [
+                    [
+                        'actions' => ['index', 'create', 'update', 'delete'],
+                        'allow' => true,
+                        'roles' => ['admin'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['POST'],
+                ],
+            ],
+        ];
+    }
+
+    /**
+     * Lists all News models.
+     * @return mixed
+     */
+    public function actionIndex()
+    {
+        $searchModel = new NewsSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->render('index',
+            ['dataProvider' => $dataProvider]);
+    }
+
+
+    /**
+     * Creates a new News model.
+     * If creation is successful, the browser will be redirected to the 'view' page.
+     * @return mixed
+     */
+    public function actionCreate()
+    {
+        $model = new News();
+
+        $profileId = (Userprofile::find()->where(Yii::$app->user->getId() == (new Userprofile())->user_id)->one())->id;
+
+        $model->User_id = $profileId;
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['news/']);
+        }
+
+        return $this->render('create', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * Updates an existing News model.
+     * If update is successful, the browser will be redirected to the 'view' page.
+     * @param integer $id
+     * @return mixed
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    public function actionUpdate($id)
+    {
+        $model = $this->findModel($id);
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['/news']);
+        }
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
+    }
+
+    /**
+     * Deletes an existing News model.
+     * If deletion is successful, the browser will be redirected to the 'index' page.
+     * @param integer $id
+     * @return mixed
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    public function actionDelete($id)
+    {
+        $model = $this->findModel($id);
+        foreach ($model->newscomments as $comment){
+            $comment->delete();
+        }
+        $model->delete();
+        return $this->redirect(['/news']);
+    }
+
+    /**
+     * Finds the News model based on its primary key value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param integer $id
+     * @return News the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    protected function findModel($id)
+    {
+        if (($model = News::findOne($id)) !== null) {
+            return $model;
+        }
+
+        throw new NotFoundHttpException('The requested page does not exist.');
+    }
+}

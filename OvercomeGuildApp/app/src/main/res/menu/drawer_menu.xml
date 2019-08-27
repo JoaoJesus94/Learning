@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_apply"
+            android:icon="@drawable/ic_apply"
+            android:title="Apply" />
+
+        <item
+            android:id="@+id/nav_opTable"
+            android:icon="@drawable/ic_optable"
+            android:title="OP Table" />
+
+        <item
+            android:id="@+id/nav_roster"
+            android:icon="@drawable/ic_roster"
+            android:title="Roster" />
+
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_calendar"
+            android:title="Calendar" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_forum"
+                android:icon="@drawable/ic_forum"
+                android:title="Forum" />
+
+            <item
+                android:id="@+id/nav_news"
+                android:icon="@drawable/ic_news"
+                android:title="News" />
+        </menu>
+    </item>
+
+</menu>

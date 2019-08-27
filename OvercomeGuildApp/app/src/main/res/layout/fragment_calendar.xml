@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpapper"
+    tools:context=".fragments.HomeFragment">
+
+    <ImageView
+        android:id="@+id/fCalendar_imgV_logo"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/string_Logo"
+        app:srcCompat="@drawable/overcome_guild_logo" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <TextView
+        android:id="@+id/textViewCalendarEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Events List"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="28dp" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+</LinearLayout>
