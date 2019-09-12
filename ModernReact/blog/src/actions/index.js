@@ -1,13 +1,28 @@
+// import _ from "lodash";
 import jsonPlaceholder from "../api/jsonPlaceholder";
 
-export const fetchPosts = () => async dispatch => {
-    const response = await jsonPlaceholder.get("/posts");
+export const fetchPostsAndUsers = () => async dispatch => {
+  console.log("About to fetch posts!");
+  await dispatch(fetchPosts());
+  console.log("Fetched posts!");
+};
 
-    dispatch({ type: 'FETCH_POSTS', payload: response.data });
+export const fetchPosts = () => async dispatch => {
+  const response = await jsonPlaceholder.get("/posts");
+
+  dispatch({ type: "FETCH_POSTS", payload: response.data });
 };
 
 export const fetchUser = userId => async dispatch => {
-    const response = await jsonPlaceholder.get(`/users/${userId}`);
+  const response = await jsonPlaceholder.get(`/users/${userId}`);
 
-    dispatch({ type: 'FETCH_USER', payload: response.data})
+  dispatch({ type: "FETCH_USER", payload: response.data });
 };
+
+// Memoization
+// export const fetchUser = userId => dispatch => _fetchUser(userId, dispatch);
+//
+// const _fetchUser = _.memoize(async (userId, dispatch) => {
+//   const response = await jsonPlaceholder.get(`/users/${userId}`);
+//   dispatch({ type: "FETCH_USER", payload: response.data });
+// });
