@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3598332d-ac52-46f3-82f0-a1dd8457e68c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamDelete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamEdit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamShow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +50,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/client/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,7 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1568368066932</updated>
       <workItem from="1568368071577" duration="1509000" />
-      <workItem from="1568370257612" duration="214000" />
+      <workItem from="1568370257612" duration="2179000" />
+      <workItem from="1568373494240" duration="1391000" />
     </task>
     <servers />
   </component>
@@ -80,7 +88,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
