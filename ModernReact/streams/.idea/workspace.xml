@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3598332d-ac52-46f3-82f0-a1dd8457e68c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamDelete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/streams/StreamShow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/GoogleAuth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +70,7 @@
       <updated>1568368066932</updated>
       <workItem from="1568368071577" duration="1509000" />
       <workItem from="1568370257612" duration="2179000" />
-      <workItem from="1568373494240" duration="1391000" />
+      <workItem from="1568373494240" duration="3614000" />
     </task>
     <servers />
   </component>
