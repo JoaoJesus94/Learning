@@ -1,1 +1,3 @@
-# Trainig
+# Learning
+
+Courses that I do
