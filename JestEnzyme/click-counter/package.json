@@ -97,6 +97,13 @@
     ]
   },
   "babel": {
+    "env": {
+      "production": {
+        "plugins": [
+          ["react-remove-properties", {"properties": ["data-test"]}]
+        ]
+      }
+    },
     "presets": [
       "react-app"
     ]
