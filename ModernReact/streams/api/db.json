@@ -4,6 +4,11 @@
       "title": "Title",
       "description": "Description",
       "id": 1
+    },
+    {
+      "title": "Other stream",
+      "description": "There's other stream",
+      "id": 2
     }
   ]
 }
